@@ -1,0 +1,21 @@
+# Quant Finance — NVDA-driven Market Correlations
+
+## Project Overview
+Analyze how large NVDA price moves affect related companies and whether we can use NVDA moves + sentiment to predict peer stock movements.
+
+## Data Sources
+- Historical prices: yfinance (daily OHLCV)
+- News headlines: NewsAPI / GDELT
+- Company metadata: Yahoo Finance / OpenFIGI
+(Full source log in `sources.md`)
+
+## Repo structure
+/data/raw/          # raw CSVs downloaded in Week1
+/data/clean/        # cleaned, analysis-ready datasets
+/notebooks/         # exploratory notebooks
+/scripts/           # data collection & processing scripts
+/README.md
+
+## Notes
+- API keys must be kept private — add them to `.env` and list `.env` in .gitignore
+- Document any use of AI tools in README (where/how used)
